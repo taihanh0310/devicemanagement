@@ -25,3 +25,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+### Installed lib
+- http://fullcalendar.io/download/ [Full Calendar]
+- Jquery
+- Bootstrap
+- Bootstrap datetimepicker
+- Fontawesome
+- Laravel excel: http://www.maatwebsite.nl/laravel-excel/docs
+- Fullcalendar laravel: https://github.com/maddhatter/laravel-fullcalendar
