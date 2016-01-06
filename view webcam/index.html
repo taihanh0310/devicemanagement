@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Display Webcam Stream</title>
+		<style>
+			#container {
+			    margin: 0px auto;
+			    width: 500px;
+			    height: 350px;
+			    border: 10px #333 solid;
+			}
+			#videoElement {
+			    width: 500px;
+			    height: 350px;
+			    background-color: #666;
+			}
+		</style>
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+		<script src='http://www.techrum.vn/js/fly/flies-obj.js' type='text/javascript' var_1='true' var_2='false' var_3='false'></script>
+	</head>
+	  
+	<body>
+		<div id="container">
+		    <video autoplay="true" id="videoElement">
+		     
+		    </video>
+		</div>
+		<script>
+			var video = document.querySelector("#videoElement");
+
+			navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+			 
+			if (navigator.getUserMedia) {       
+			    navigator.getUserMedia({video: true}, handleVideo, videoError);
+			}
+			function handleVideo(stream) {
+			    video.src = window.URL.createObjectURL(stream);
+			}
+			function videoError(e) {
+			    // do something
+			}
+		</script>
+	</body>
+</html>
