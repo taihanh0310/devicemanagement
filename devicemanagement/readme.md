@@ -34,3 +34,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Fontawesome
 - Laravel excel: http://www.maatwebsite.nl/laravel-excel/docs
 - Fullcalendar laravel: https://github.com/maddhatter/laravel-fullcalendar
+- Role: https://github.com/romanbican/roles
+- Roles tham khao: https://github.com/Zizaco/entrust
