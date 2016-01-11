@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSectionsTable extends Migration
+class CreateNetworksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,13 @@ class CreateSectionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sections', function (Blueprint $table) {
+        Schema::create('networks', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('section_name');
-            $table->integer('section_manager');
+            $table->string('network_name');
+            $table->string('network_netmask',20);
+            $table->string('network_gateway',20);
+            $table->string('network_security_key',100);
             $table->timestamps();
-            //truong bo phan
         });
     }
 
@@ -28,6 +29,6 @@ class CreateSectionsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('sections');
+        Schema::drop('networks');
     }
 }
