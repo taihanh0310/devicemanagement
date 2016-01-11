@@ -25,6 +25,7 @@ class CreateDevicesTable extends Migration
             $table->boolean('antivirus_install');
             $table->datetime('last_activity');
             $table->integer('device_status');
+            $table->longText('device_description');
             $table->timestamps();
         });
     }

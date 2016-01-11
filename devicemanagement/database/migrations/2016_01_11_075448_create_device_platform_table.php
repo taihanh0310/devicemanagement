@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDivisionsTable extends Migration
+class CreateDevicePlatformTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,11 +12,10 @@ class CreateDivisionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('divisions', function (Blueprint $table) {
+        Schema::create('platform', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('division_name');
-            $table->integer('division_manager');
-            $table->string('division_email');
+            $table->string('name');
+            $table->string('version');
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateDivisionsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('divisions');
+        Schema::drop('platform');
     }
 }
