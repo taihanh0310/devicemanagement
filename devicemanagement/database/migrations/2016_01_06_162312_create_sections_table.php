@@ -16,6 +16,7 @@ class CreateSectionsTable extends Migration
             $table->increments('id');
             $table->string('section_name');
             $table->integer('section_manager');
+            $table->string('section_email');
             $table->timestamps();
             //truong bo phan
         });
