@@ -36,3 +36,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Fullcalendar laravel: https://github.com/maddhatter/laravel-fullcalendar
 - Role: https://github.com/romanbican/roles
 - Roles tham khao: https://github.com/Zizaco/entrust
+
+### Tai lieu tham khao
+- https://laravel.com/docs/5.2/authorization
+- https://laravel.com/docs/5.2/mail
+- https://github.com/Snowfire/Beautymail
