@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDevicePlatformTable extends Migration
+class CreateDeviceManufacturersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,9 @@ class CreateDevicePlatformTable extends Migration
      */
     public function up()
     {
-        Schema::create('platform', function (Blueprint $table) {
+        Schema::create('manufacturers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('version');
             $table->timestamps();
         });
     }
@@ -27,6 +26,6 @@ class CreateDevicePlatformTable extends Migration
      */
     public function down()
     {
-        Schema::drop('platform');
+        Schema::drop('manufacturers');
     }
 }
