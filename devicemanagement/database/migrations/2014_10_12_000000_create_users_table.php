@@ -19,6 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password', 60);
             $table->integer('section_id');
+            $table->boolean('active');
+            $table->string('confirmation_code')->nullable();
+            $table->string('phone_number', 15)->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

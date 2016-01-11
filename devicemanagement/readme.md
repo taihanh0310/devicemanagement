@@ -41,3 +41,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - https://laravel.com/docs/5.2/authorization
 - https://laravel.com/docs/5.2/mail
 - https://github.com/Snowfire/Beautymail
+- Email verification : http://bensmith.io/email-verification-with-laravel
+- https://github.com/BnSmth/email-verification
