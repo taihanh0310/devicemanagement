@@ -14,6 +14,11 @@ class CreateNotifiesTable extends Migration
     {
         Schema::create('notifies', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('device_id');
+            $table->integer('user_id');
+            $table->datetime('tranfer_start_date');
+            $table->datetime('tranfer_end_date');
+            $table->integer('notify_status');
             $table->timestamps();
         });
     }
