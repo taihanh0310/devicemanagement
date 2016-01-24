@@ -11,5 +11,5 @@ class Network extends Model
      *
      * @var string
      */
-    protected $table = 'notifies';
+    protected $table = 'networks';
 }

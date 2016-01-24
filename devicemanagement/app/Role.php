@@ -11,8 +11,8 @@ class Role extends Model
      *
      * @var string
      */
-    protected $table = 'devices';
-    
+    protected $table = 'roles';
+
     /**
      * Relationships
      */
